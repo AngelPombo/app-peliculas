@@ -1,8 +1,9 @@
 import React from 'react'
+import "./BuscadorPelis.css"
 
 function BuscadorPelis() {
   return (
-    <div className="search">
+    <div className="buscador-pelis">
         <h3 className="title">Buscador</h3>
         <form>
             <input type="text"/>

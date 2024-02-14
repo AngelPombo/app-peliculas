@@ -1,4 +1,7 @@
 import React, { useState } from 'react'
+import { GuardarEnStorage } from '../../helpers/GuardarEnStorage'
+import "./CrearPelis.css"
+
 
 function CrearPelis() {
 
@@ -26,17 +29,21 @@ function CrearPelis() {
         
         setPeli(pelicula);
 
+        GuardarEnStorage("pelis", pelicula);
+        
+
     }
 
 
+
   return (
-    <div className="add">
-        <h3 className="title">{tituloComponente}</h3>
+    <div className="crear-pelis-div">
+        <h3 className="crear-pelis-title">{tituloComponente}</h3>
         <strong>
             {(titulo && descripcion) && "Has creado la película: " + titulo}
         </strong>
 
-        <form onSubmit={handleSubmit}>
+        <form className='crear-pelis-form' onSubmit={handleSubmit}>
             <input type="text" id="titulo" name="titulo" placeholder="Título" />
             <textarea id="descripcion" name="descripcion" placeholder="Descripción"></textarea>
             <input type="submit" id="save" value="Guardar" />

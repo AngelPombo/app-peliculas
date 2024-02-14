@@ -8,21 +8,16 @@ import NavBar from './components/NavBar/NavBar'
 function App() {
 
   return (
-    <>
       <div className="layout">
         <Header />
         <NavBar />
+        <BuscadorPelis />
         <ListadoPelis />
-        <aside className="lateral">
-          <BuscadorPelis />
-          <CrearPelis />
-        </aside>
-        <footer>
+        <CrearPelis />
+        <footer className='footer'>
           Desarollado por Ángel Pombo 
         </footer>
       </div>
-    
-    </>
   )
 }
 
