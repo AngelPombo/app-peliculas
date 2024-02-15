@@ -4,7 +4,7 @@ import "./Header.css"
 function Header() {
   return (
     <header className="header">
-        <h1>App Películas</h1>
+        <h1>Mis películas favoritas</h1>
     </header>
   )
 }

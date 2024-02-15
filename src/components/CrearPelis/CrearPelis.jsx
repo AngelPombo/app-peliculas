@@ -3,9 +3,7 @@ import { GuardarEnStorage } from '../../helpers/GuardarEnStorage'
 import "./CrearPelis.css"
 
 
-function CrearPelis() {
-
-    const tituloComponente = "Añadir película"
+function CrearPelis({setListadoState}) {
 
     const [peli, setPeli] = useState({
         titulo: "",
@@ -29,7 +27,12 @@ function CrearPelis() {
         
         setPeli(pelicula);
 
+        setListadoState(elementos => {
+            return [...elementos, pelicula]
+        })
+
         GuardarEnStorage("pelis", pelicula);
+        
         
 
     }
@@ -38,15 +41,15 @@ function CrearPelis() {
 
   return (
     <div className="crear-pelis-div">
-        <h3 className="crear-pelis-title">{tituloComponente}</h3>
+        <h3 className="crear-pelis-title">Añadir nueva película:</h3>
         <strong>
             {(titulo && descripcion) && "Has creado la película: " + titulo}
         </strong>
 
         <form className='crear-pelis-form' onSubmit={handleSubmit}>
-            <input type="text" id="titulo" name="titulo" placeholder="Título" />
-            <textarea id="descripcion" name="descripcion" placeholder="Descripción"></textarea>
-            <input type="submit" id="save" value="Guardar" />
+            <input type="text" id="titulo" name="titulo" placeholder="Título" className='crear-pelis-input' />
+            <textarea id="descripcion" name="descripcion" placeholder="Descripción" className='crear-pelis-textarea'></textarea>
+            <input type="submit" id="save" value="Guardar" className='crear-pelis-btn' />
         </form>
     </div>
   )
