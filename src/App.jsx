@@ -16,7 +16,7 @@ function App() {
         <ListadoPelis listadoState={listadoState} setListadoState={setListadoState} />
         <CrearPelis setListadoState={setListadoState} />
         <footer className='footer'>
-          Desarollado por Ángel Pombo 
+          © Desarollado por Ángel Pombo 
         </footer>
       </div>
   )

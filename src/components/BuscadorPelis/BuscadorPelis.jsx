@@ -4,7 +4,7 @@ import "./BuscadorPelis.css"
 function BuscadorPelis({listadoState, setListadoState}) {
 
   const[busqueda, setBusqueda] = useState("");
-  const[noEncontrado, setNoEncontrado] = useState(false);
+ 
 
   const handleChange = (e) => {
     
@@ -16,9 +16,9 @@ function BuscadorPelis({listadoState, setListadoState}) {
 
     if(busqueda.length <= 1 || pelisEncontradas <= 0){
       pelisEncontradas = JSON.parse(localStorage.getItem("pelis"))
-      setNoEncontrado(true)
+      
     } else{
-      setNoEncontrado(false)
+      
     }
 
     setListadoState(pelisEncontradas);
@@ -26,12 +26,9 @@ function BuscadorPelis({listadoState, setListadoState}) {
 
   return (
     <div className="buscador-pelis">
-        <h3 className="title">Buscador</h3>
-        {(noEncontrado == true && busqueda.length > 2) && (
-          <span>No se ha encontrado ninguna película</span>
-        )}
+        <h3 className="buscador-title">Buscador</h3>
         <form>
-            <input type="text" id="buscador" name="busqueda" autoComplete='off' value={busqueda} onChange={handleChange}/>
+            <input type="text" id="buscador" name="busqueda" autoComplete='off' placeholder='Busca aquí tu peli' value={busqueda} onChange={handleChange} className='buscador-input'/>
         </form>
     </div>
   )

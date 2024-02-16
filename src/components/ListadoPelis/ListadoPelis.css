@@ -9,15 +9,18 @@
 }
 
 .listado-pelis-article{
-    padding: 1rem;
-    background-color: rgb(255, 225, 0);
+    padding: 1.5rem;
+    background-color: whitesmoke;
     border-radius: 14px;
     text-align: center;
     margin: 1rem;
+    word-break: break-all;
+    width: 15rem;
 }
 
 .peli-title, .peli-description{
     margin-bottom: 0.5rem;
+    padding-top: 0.25rem;
 }
 
 .btns-div{
@@ -31,7 +34,7 @@
     border-radius: 14px;
     padding: 0.5rem;
     border: none;
-    background-color: rgb(0, 151, 251);
+    background-color: rgb(255, 101, 130);
     width: 80px;
 }
 
@@ -44,7 +47,7 @@
     border-radius: 14px;
     padding: 0.5rem;
     border: none;
-    background-color: rgb(254, 61, 61);
+    background-color: rgb(255, 101, 130);
     width: 80px;
     cursor: pointer;
 }
