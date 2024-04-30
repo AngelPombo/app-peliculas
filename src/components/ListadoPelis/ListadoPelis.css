@@ -1,21 +1,28 @@
 .listado-pelis-section{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    background-color: rgb(0, 0, 0);
+    background-color: whitesmoke;
     flex-grow: 1;
     flex-wrap: wrap;
+    border-bottom: 4px solid rgb(67, 67, 67);
 }
 
 .listado-pelis-article{
+    display: flex;
+    flex-direction: column;
     padding: 1.5rem;
-    background-color: whitesmoke;
+    background-color: white;
+    box-shadow: 5px 2px 2px rgba(137, 135, 135, 0.387);
     border-radius: 14px;
     text-align: center;
     margin: 1rem;
-    word-break: break-all;
+    word-break:break-all;
     width: 15rem;
+    align-items: center;
+    gap: 1rem;
 }
 
 .peli-title, .peli-description{
@@ -26,34 +33,32 @@
 .btns-div{
     display: flex;
     justify-content: center;
-    gap:1rem;
-    
+    gap: 1rem;
 }
 
 .edit-peli-btn{
     border-radius: 14px;
     padding: 0.5rem;
     border: none;
-    background-color: rgb(255, 101, 130);
+    background-color: #F3698C;
     width: 80px;
-}
-
-.edit-peli-btn:hover{
-    cursor: pointer;
-    background-color: rgb(64, 179, 255);
 }
 
 .delete-peli-btn{
     border-radius: 14px;
     padding: 0.5rem;
     border: none;
-    background-color: rgb(255, 101, 130);
+    background-color: #F3698C;
     width: 80px;
     cursor: pointer;
 }
 
-.delete-peli-btn:hover{
-    cursor: pointer;
-    background-color: rgb(254, 107, 107);
+@media (min-width: 768px){
+    .listado-pelis-article{
+        min-height: 400px;
+        min-width: 300px;
+        height: fit-content;
+        gap:2rem;
+        justify-content:space-evenly;
+    }
 }
-

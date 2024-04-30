@@ -2,15 +2,24 @@
     width: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: rgb(255, 101, 130);;
+    background-color: #AAE6FF;
     display: flex;
     justify-content: center;
     gap:1rem;
-    border-bottom: 0.25rem solid rgb(255, 255, 255)
+    border-bottom: 4px solid rgb(67, 67, 67);
+}
+
+.buscador-div{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.buscador-logo{
+    width: 1.5rem;
 }
 
 .buscador-input{
     border: none;
     border-radius: 14px;
-    padding: 0.3rem;
+    padding: 0.5rem;
 }

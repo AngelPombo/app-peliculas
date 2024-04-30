@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
-import "./BuscadorPelis.css"
+import React, { useState } from 'react';
+import "./BuscadorPelis.css";
+import logo from "/buscadoricon.svg";
 
 function BuscadorPelis({listadoState, setListadoState}) {
 
@@ -26,10 +27,10 @@ function BuscadorPelis({listadoState, setListadoState}) {
 
   return (
     <div className="buscador-pelis">
-        <h3 className="buscador-title">Buscador</h3>
-        <form>
-            <input type="text" id="buscador" name="busqueda" autoComplete='off' placeholder='Busca aquí tu peli' value={busqueda} onChange={handleChange} className='buscador-input'/>
-        </form>
+      <img className="buscador-logo" src={logo} alt='icono buscador'/>
+      <form>
+          <input className='buscador-input' type="text" id="buscador" name="busqueda" autoComplete='off' placeholder='Busca aquí tu peli' value={busqueda} onChange={handleChange} />
+      </form>
     </div>
   )
 }

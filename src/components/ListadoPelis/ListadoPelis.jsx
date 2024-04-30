@@ -33,8 +33,8 @@ const ListadoPelis = ({listadoState, setListadoState}) => {
         listadoState.map(peli =>{
           return(
             <article key={peli.id} className="listado-pelis-article">
-              <h3 className="peli-title">{peli.titulo}</h3>
-              <p className="peli-description">{peli.descripcion}</p>
+              <h3 className="peli-title">Título: {peli.titulo}</h3>
+              <p className="peli-description">Descripción: {peli.descripcion}</p>
               <div className='btns-div'>
                 <button className="edit-peli-btn" onClick={() => setEditar(peli.id)}>Editar</button>
                 <button className="delete-peli-btn" onClick={() => handleDelete(peli.id)}>Eliminar</button>

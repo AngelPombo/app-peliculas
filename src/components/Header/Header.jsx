@@ -5,7 +5,7 @@ import Image from "../../images/pelicula-img.png"
 function Header() {
   return (
     <header className="header">
-      <h1 className='header-title'>Mis películas favoritas</h1>
+      <h1 className='header-title'>Mis películas pendientes</h1>
       <img src={Image} alt='Logo' className='header-image'/>
     </header>
   )

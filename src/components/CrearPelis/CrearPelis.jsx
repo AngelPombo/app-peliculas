@@ -42,7 +42,7 @@ function CrearPelis({setListadoState}) {
   return (
     <div className="crear-pelis-div">
         <h3 className="crear-pelis-title">Añadir nueva película:</h3>
-        <strong>
+        <strong className='crear-pelis-strong'>
             {(titulo && descripcion) && "Has creado la película: " + titulo}
         </strong>
 

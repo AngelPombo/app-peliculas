@@ -1,11 +1,20 @@
 .crear-pelis-div{
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: rgb(255, 101, 130);
+    background-color: #AAE6FF;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
+    border-bottom: 4px solid rgb(67, 67, 67);
+}
+
+.crear-pelis-title{
+    padding-top: 1rem;
+}
+
+.crear-pelis-strong{
+    padding-top: 1rem;
 }
 
 .crear-pelis-form{
@@ -35,7 +44,7 @@
     border-radius: 14px;
     padding: 0.5rem;
     border: none;
-    background-color: rgb(252, 255, 93);
+    background-color: #FAE169;
     color: black;
     width: 80px;
 }

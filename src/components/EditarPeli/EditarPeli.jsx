@@ -28,7 +28,6 @@ function EditarPeli({peli, conseguirPeliculas, setEditar, setListadoState}) {
 
   return (
     <div className='editar-peli-div'>
-      <h3 className='editar-peli-h3'>Editar película : {peli.titulo}</h3>
       <form className='editar-peli-form' onSubmit={e => guardarEdicion(e, peli.id)}>
         <input type='text' name='titulo' className='editar-peli-input' defaultValue={peli.titulo} />
         <textarea name='descripcion' className="editar-peli-textarea" defaultValue={peli.descripcion} />
